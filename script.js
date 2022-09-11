@@ -18,10 +18,12 @@ function playerChoice() {
   }
   input = input.toLowerCase();
   let check = validateInput(input);
-  if (check == true) {
-    console.log(input);
+  while (check == false) {
+    input = prompt("Please choose rock, paper or scissors. Type in the exact spelling of these words.");
+    input = input.toLowerCase();
+    check = validateInput(input);
   }
-  //console.log(input);
+
 }
 
 function computerChoice() {
@@ -29,10 +31,7 @@ function computerChoice() {
 }
 
 function validateInput(choice) {
-  if (choices.includes(choice)) {
-    return true;
-  }
-    return false;
+  return choices.includes(choice);
 }
 
 game();
