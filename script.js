@@ -9,12 +9,12 @@ document.querySelector("button").textContent = "Start a new game";
 logWins();
 }
 
-function playRound(round) {
+function playRound() {
   const playerSelection = playerChoice();
   const computerSelection = computerChoice();
   const winner = checkWinner(playerSelection, computerSelection);
   winners.push(winner);
-  logRound(playerSelection, computerSelection, winner, round);
+  logRound(playerSelection, computerSelection, winner);
 }
 
 function playerChoice() {
@@ -70,9 +70,8 @@ function logWins() {
   console.log("Tie:", tie);
 }
 
-function logRound(playerChoice, computerChoice, winner, round) {
-  console.log("Round:", round);
+function logRound(playerChoice, computerChoice, winner) {
   console.log("Player:", playerChoice);
   console.log("Computer:", computerChoice);
-  console.log(winner, "Won the Round");
+  console.log(winner);
 }
