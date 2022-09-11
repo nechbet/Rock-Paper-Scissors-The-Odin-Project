@@ -1,13 +1,13 @@
 const choices = ["rock", "paper", "scissors"];
 const winners = [];
 
-function game() {
-  for(let i = 0; i <=5; i++) {
-   playRound();
-}
-document.querySelector("button").textContent = "Start a new game";
-logWins();
-}
+// function game() {
+//   for(let i = 0; i <=5; i++) {
+//    playRound();
+// }
+// document.querySelector("button").textContent = "Start a new game";
+// logWins();
+// }
 
 function playRound() {
   const playerSelection = playerChoice();
