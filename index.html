@@ -8,36 +8,25 @@
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div class="score">
-      <h1 class="ties">Tie: 0</h1>
-    </div>
-    <div class="winnerDiv">
-      <h1 class="winner"></h1>
-      <button class="reset" onclick="resetGame()">Play Again?</button>
-    </div>
-    <div class="playerSection">
-      <h3 class="playerChoice"></h3>
-      <h3 class="playerScore">Score: 0</h3>
-      <div class="playerImgs">
-        <img src="./images/rock.png" alt="Rock" class="pImg" id="rock" />
-        <img src="./images/paper.png" alt="Paper" class="pImg" id="paper" />
-        <img
-          src="./images/scissors.png"
-          alt="Scissors"
-          class="pImg"
-          id="scissors"
-        />
+    <nav class="nav">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <p class="text">This is a game of rock, paper and scissors!</p>
+  </nav>
+  <div class="container" >
+      <div class="text" >    
+          <button class="btn" id="rock">Rock</button>
+          <button class="btn" id="paper">Paper</button>
+          <button class="btn" id="scissors">Scissors</button>
       </div>
-    </div>
-    <div class="computerSection">
-      <h3 class="computerChoice"></h3>
-      <h3 class="computerScore">Score: 0</h3>
-      <div class="computerImgs">
-        <img src="./images/rock.png" alt="Rock" class="rock" />
-        <img src="./images/paper.png" alt="Paper" class="paper" />
-        <img src="./images/scissors.png" alt="Scissors" class="scissors" />
-      </div>
-    </div>
+  </div>
+  <div>
+      <h1 id="playerScore">0</h1>
+      <h1 id="compScore">0</h1>
+  </div>
+  <div class="result">
+      <h1 id="finalResult"></h1>
+      <button id="playAgain"class="btn">play again?</button>
+  </div>
   </body>
   <script src="script.js"></script>
 </html>
