@@ -47,13 +47,18 @@ function displayEnd() {
     document.querySelector(".winner").textContent =
       "You Won 5 Games, Congrats!";
   } else {
-    document.querySelector(".winner").textContent ="Computer won 5 times";}
-    document.querySelector(".reset").style.display = "flex";
+    document.querySelector(".winner").textContent = "Computer won 5 times";
+  }
+  document.querySelector(".reset").style.display = "flex";
 }
 
 function displayRound(playerChoice, computerChoice, winner) {
-  document.querySelector(".playerChoice").textContent = `You chose ${playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)}`;
-  document.querySelector(".computerChoice").textContent = `The computer chose ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`;
+  document.querySelector(".playerChoice").textContent = `You chose ${
+    playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)
+  }`;
+  document.querySelector(".computerChoice").textContent = `The computer chose ${
+    computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)
+  }`;
   displayRoundWinner(winner);
 }
 
@@ -81,8 +86,10 @@ function computerSelect() {
   const choice = choices[Math.floor(Math.random() * choices.length)];
   document.querySelector(`.${choice}`).classList.add("active");
 
-setTimeout(() => { document.querySelector(`.${choice}`).classList.remove("active");}, 700);
- return choice;
+  setTimeout(() => {
+    document.querySelector(`.${choice}`).classList.remove("active");
+  }, 700);
+  return choice;
 }
 
 function checkWins() {
