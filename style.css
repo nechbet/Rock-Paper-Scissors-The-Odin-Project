@@ -2,13 +2,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(44, 90, 44, 0.199);
+    background: white;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    color: white;
-    text-shadow: 0 0 4px black;
+    color: rgb(0, 0, 0);
   }
   .choices {
     display: flex;
@@ -51,11 +48,11 @@ body {
     align-items: center;
     width: 200px;
     height: 60px;
-    background-color: rgba(0, 255, 255, 0.507);
+    background-color: rgba(255, 106, 0, 0.507);
     color: black;
-    font-size: x-large;
-    border: 1px solid black;
-    border-radius: 5px;
+    font-size: 24px;
+    
+    
   }
   .reset:hover {
     cursor: pointer;
